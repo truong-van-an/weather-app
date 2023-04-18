@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header__weather">
+                <i class="fa-solid fa-bars"></i>
+                <h4 class="city">Ha Noi</h4>
+                <div class="search">
+                    <input type="text" placeholder="Hãy nhập tên Thành Phố">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+        </header>
+        <div class="content">
+            <div class="content__header">
+                <h3 class="active">Hôm nay</h3>
+                <h3>Ngày mai</h3>
+                <h3>Ngày</h3>
+            </div>
+            <div class="body-content active">
+                <div class="date">Tháng tám 28, 12:45 PM</div>
+                <div class="box-temperature">
+                    <div class="item">
+                        <div class="temperature"><span class="nhietdo">26</span><sup><i class="fa-regular fa-circle"></i></sup>C</div>
+                        <div class="weather__data">
+                            <div class="wind"><i class="fa-solid fa-wind"></i>Tốc độ gió: 2m/s</div>
+                            <div class="eye"><i class="fa-regular fa-eye"></i>Tầm nhìn: 2m/s</div>
+                            <div class="cloud"><i class="fa-solid fa-cloud"></i>Mây: 10%</div>
+                            <div class="humidity"><i class="fa-solid fa-droplet"></i>Mây: 10%</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="icon">
+                            <img src="" alt="">
+                        </div>
+                        <span class="textWeather"></span>
+                        <p class="sunrise"></p>
+                        <p class="sunset"></p>
+                    </div>
+                </div>
+                <div class="box__hourly">
+                </div>
+            </div>
+            <div class="body-content Tomorrow">
+                <div class="date dateTomorrow">Tháng tám 28, 12:45 PM</div>
+                <div class="box-temperature__tomorrow">
+                    <div class="item__tomorrow">
+                        <div class="icon">
+                            <img src="" alt="">
+                        </div>
+                        <div class="temperature"><span class="nhietdo nhietdoTomorrow">26</span><sup><i class="fa-regular fa-circle"></i></sup>C</div>
+                    </div>
+                    <div class="item__tomorrow">
+                        <span class="textWeather textWeatherTomorrow"></span>
+                        
+                        <div class="weather__data">
+                            <div class="wind windTomorrow"><i class="fa-solid fa-wind"></i>Tốc độ gió: 2m/s</div>
+                            <div class="eye eyeTomorrow"><i class="fa-regular fa-eye"></i>Tầm nhìn: 2m/s</div>
+                            <div class="cloud cloudTomorrow"><i class="fa-solid fa-cloud"></i>Mây: 10%</div>
+                            <div class="humidity humidityTomorrow"><i class="fa-solid fa-droplet"></i>Mây: 10%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box__hourly">
+                </div>
+            </div>
+            <div class="body-content boxDate">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
